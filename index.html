@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pikmi - Твоя ідеальна шаурма</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="изображение_2026-03-11_011306787-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-site">
+        <header>
+            <div class="logo">
+                <img src="logo.jpg" alt="Pikmi Логотип">
+            </div>
+            <nav>
+                <a href="#about">Про нас</a>
+                <a href="#menu">Меню</a>
+                <a href="#reviews">Відгуки</a>
+                <a href="#contact">Контакти</a>
+            </nav>
+        </header>
+
+        <section class="hero-banner">
+            <img src="header.jpg" alt="Pikmi - Твоя ідеальна шаурма">
+            <div class="hero-content">
+                <h1 class="hero-h">ТВОЯ ІДЕАЛЬНА ШАУРМА</h1>
+                <button class="btn hero-btn" onclick="openOrderModal('Будь-яка шаурма з меню')">Зробити замовлення</button>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div>
+                <h2>Про Pikmi</h2>
+                <p>Pikmi — це більше, ніж просто шаурма. Ми використовуємо тільки найсвіжіші та високоякісні інгредієнти, щоб створити страву, якою ми пишаємося.</p>
+                <p>Наша команда прагне надати вам неперевершений смаковий досвід, поєднуючи традиційні рецепти з сучасними інтерпретаціями. Фірмовий рожевий лаваш — це наша візитна картка, яка підкорить ваше серце (і ваш Instagram).</p>
+            </div>
+            <div class="about-images">
+                <img src="unnamed (3).jpg" alt="Інтер'єр Pikmi">
+                <img src="unnamed (4).jpg" alt="Приготування шаурми">
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <h2>Наше Меню</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-item">
+                    <img src="Без імен4і.png" alt="Pikmi Класика">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Pikmi Класика 🩷</h3>
+                        </div>
+                        <p>Ніжне куряче філе, свіжі овочі, хрустка капуста та наш фірмовий рожевий соус у теплому лаваші.</p>
+                        <span class="price">120 грн</span>
+                        <button onclick="openOrderModal('Pikmi Класика')" class="btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="unnamed (1).jpg" alt="Сирна Насолода">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Сирна Насолода 🧀</h3>
+                        </div>
+                        <p>Подвійна порція сиру чеддер, моцарела, курка та сирний соус. Справжня насолода для сироманів.</p>
+                        <span class="price">140 грн</span>
+                        <button onclick="openOrderModal('Сирна Насолода')" class="btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="Без іме3ні.png" alt="Гостра Штучка">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Гостра Штучка 🌶️</h3>
+                        </div>
+                        <p>Для тих, хто любить гаряче! Курка, халапеньйо, кукурудза, овочі та пікантний гострий соус.</p>
+                        <span class="price">135 грн</span>
+                        <button onclick="openOrderModal('Гостра Штучка')" class="btn">Замовити</button>
+                    </div>
+                </div>
+                 
+                 <div class="menu-item">
+                    <img src="Без імені3.png" alt="Креветкова Мрія">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Креветкова Мрія 🍤</h3>
+                        </div>
+                        <p>Хрусткі креветки в темпурі, свіже авокадо, шматочки соковитого манго, мікс салату та пікантний рожевий світ-чилі соус.</p>
+                        <span class="price">180 грн</span>
+                        <button onclick="openOrderModal('Креветкова Мрія')" class="btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="Без імені.png" alt="Веджі Хіт">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Веджі Хіт 🥑</h3>
+                        </div>
+                        <p>Смажений сир халумі з апетитною скоринкою, шпинат, в'ялені томати, свіжий огірок, ніжний хумус та фірмовий рожевий соус.</p>
+                        <span class="price">150 грн</span>
+                        <button onclick="openOrderModal('Веджі Хіт')" class="btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="Без імені1.png" alt="Тропічний Бум">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3>Тропічний Бум 🍍</h3>
+                        </div>
+                        <p>Соковите куряче філе, карамелізовані кільця ананаса на грилі, хрусткий бекон, плавлений сир та рожевий BBQ-соус.</p>
+                        <span class="price">145 грн</span>
+                        <button onclick="openOrderModal('Тропічний Бум')" class="btn">Замовити</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <h2>Відгуки клієнтів</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Найкраща шаурма в місті! Рожевий лаваш — це просто вау, дуже інстаграмно. А смак ще кращий за вигляд. М'ясо дуже ніжне."</p>
+                    <p class="reviewer-name">Аліна М.</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Сирна насолода виправдовує свою назву на всі 100%. Соуси неймовірні, сиру дійсно багато. Однозначно рекомендую всім друзям!"</p>
+                    <p class="reviewer-name">Максим В.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p class="review-text">"Дуже класне місце. Гостра шаурма дійсно гостра, як я люблю, з халапеньйо переборщили в міру. Персонал привітний."</p>
+                    <p class="reviewer-name">Олена К.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Чекаємо на тебе!</h2>
+            <p>📍 м. Київ, вул. Різницька, 3</p>
+            <p>🕒 Працюємо щодня з 10:00 до 22:00</p>
+            <p>📞 +38 (099) 123-45-67</p>
+        </section>
+
+        <footer style="background-color: var(--black); color: #888; text-align: center; padding: 20px; font-family: 'Nunito', sans-serif;">
+            <p style="margin-bottom: 10px;">© 2026 Pikmi. Всі права захищені.</p>
+            <a href="#" onclick="openPasswordModal(event)" style="color: var(--bright-pink); text-decoration: none; font-size: 0.9rem; padding: 10px; display: inline-block;">Вхід в Адмін-панель</a>
+        </footer>
+    </div>
+
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeOrderModal()">&times;</button>
+            <h2 class="modal-header">Оформлення замовлення</h2>
+            <form id="orderForm">
+                <div class="flex-row">
+                    <div class="form-group" style="flex: 2;">
+                        <label for="orderItem">Вибір шаурми</label>
+                        <select id="orderItem" name="orderItem" required>
+                            <option value="Pikmi Класика">Pikmi Класика 🩷</option>
+                            <option value="Сирна Насолода">Сирна Насолода 🧀</option>
+                            <option value="Гостра Штучка">Гостра Штучка 🌶️</option>
+                            <option value="Креветкова Мрія">Креветкова Мрія 🍤</option>
+                            <option value="Веджі Хіт">Веджі Хіт 🥑</option>
+                            <option value="Тропічний Бум">Тропічний Бум 🍍</option>
+                            <option value="Будь-яка шаурма з меню" hidden>Будь-яка шаурма з меню</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="orderQuantity">Кількість</label>
+                        <input type="number" id="orderQuantity" name="orderQuantity" min="1" max="20" value="1" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerName">Ім'я</label>
+                    <input type="text" id="customerName" name="customerName" required placeholder="Введіть ім'я">
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Номер телефону</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required placeholder="+38 (0__) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label for="customerAddress">Адреса доставки/самовивозу</label>
+                    <input type="text" id="customerAddress" name="customerAddress" required placeholder="Вулиця, будинок, квартира">
+                </div>
+                <button type="submit" class="btn submit-btn">Підтвердити замовлення</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="passwordModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closePasswordModal()">&times;</button>
+            <h2 class="modal-header">Вхід в Адмін-панель</h2>
+            <form id="passwordForm">
+                <div class="form-group">
+                    <label for="adminPassword">Введіть пароль</label>
+                    <input type="password" id="adminPassword" name="adminPassword" required>
+                </div>
+                <button type="submit" class="btn submit-btn">Увійти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="admin-panel">
+        <div class="admin-header">
+            <h2 class="admin-title">Панель управління замовленнями</h2>
+            <button class="btn" onclick="toggleAdminPanel(false)">Повернутися на сайт</button>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Дата та час</th>
+                        <th>Клієнт</th>
+                        <th>Контакти / Адреса</th>
+                        <th>Замовлення</th>
+                        <th>Статус</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                    <tr><td colspan="6" style="text-align: center; padding: 30px; color: #888;">Завантаження замовлень...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="editOrderModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeEditOrderModal()">&times;</button>
+            <h2 class="modal-header">Редагування замовлення</h2>
+            <form id="editOrderForm">
+                <input type="hidden" id="editOrderId">
+                
+                <div class="flex-row">
+                    <div class="form-group" style="flex: 2;">
+                        <label for="editOrderItem">Змінити шаурму</label>
+                        <select id="editOrderItem" name="editOrderItem" required>
+                            <option value="Pikmi Класика">Pikmi Класика</option>
+                            <option value="Сирна Насолода">Сирна Насолода</option>
+                            <option value="Гостра Штучка">Гостра Штучка</option>
+                            <option value="Креветкова Мрія">Креветкова Мрія</option>
+                            <option value="Веджі Хіт">Веджі Хіт</option>
+                            <option value="Тропічний Бум">Тропічний Бум</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="editOrderQuantity">Кількість</label>
+                        <input type="number" id="editOrderQuantity" min="1" max="50" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="editOrderStatus">Статус виконання</label>
+                    <select id="editOrderStatus" name="editOrderStatus" required>
+                        <option value="new">Нове</option>
+                        <option value="processing">В процесі</option>
+                        <option value="done">Виконано</option>
+                    </select>
+                </div>
+                
+                <div class="flex-row" style="margin-top: 15px;">
+                    <button type="button" class="btn btn-secondary submit-btn" onclick="closeEditOrderModal()">Скасувати</button>
+                    <button type="submit" class="btn submit-btn">Зберегти зміни</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Тост сповіщення -->
+    <div id="toast">Повідомлення</div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
